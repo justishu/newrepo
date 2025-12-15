@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "3f5a",
+      "username": "manisha",
+      "password": "1234"
+    },
+    {
+      "id": "d687",
+      "username": "manisha",
+      "password": "abc"
+    },
+    {
+      "id": "405d",
+      "username": "abc",
+      "password": "123"
+    },
+    {
+      "id": "f7de",
+      "username": "manisha",
+      "password": "1234"
+    },
+    {
+      "id": "d3c9",
+      "username": "xyz",
+      "password": "1234"
+    },
+    {
+      "id": "0276",
+      "username": "zxc",
+      "password": "123"
+    },
+    {
+      "id": "279c",
+      "username": "manisha",
+      "password": "1234"
+    }
+  ]
+}
