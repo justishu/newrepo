@@ -1,19 +1,13 @@
-const form = document.getElementById("loginForm");
-
-form.addEventListener("submit", function (e) {
+document.getElementById("loginForm").addEventListener("submit", e=> {
     e.preventDefault();
 
     const username = document.getElementById("loginUname").value;
     const password = document.getElementById("loginPswd").value;
 
     fetch("http://localhost:3000/users")
-        .then(function (res) {
-            return res.json();
-        })
-        .then(function (ip) {
-            const user = ip.find(function (u) {
-                return u.username === username && u.password === password;
-            });
+        .then(res=>res.json())
+        .then(ip=> {
+            const user = ip.find(u=>u.username === username && u.pswd === password);
 
             if (!user) {
                 alert("User not found. Please sign up.");
@@ -25,7 +19,5 @@ form.addEventListener("submit", function (e) {
             alert("Login successful");
             window.location.href = "index.html";
         })
-        .catch(function () {
-            alert("error");
-        });
+        .catch(()=>alert("error"));
 });
